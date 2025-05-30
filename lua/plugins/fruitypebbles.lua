@@ -1,0 +1,5 @@
+return {
+  {
+    "BoilingSoup/fruitypebbles.nvim",
+  },
+}
