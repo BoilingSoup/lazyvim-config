@@ -15,6 +15,7 @@ return {
         javascriptreact = { "prettierd" },
         typescriptreact = { "prettierd" },
         json = { "prettierd" },
+        php = { "php-cs-fixer" },
       },
       formatters = {
         clang_format = {

@@ -4,6 +4,11 @@ return {
     opts = {
       inlay_hints = { enabled = false },
       servers = {
+        -- golangci_lint_ls = {
+        --             init_options = {
+        --                 command = {"golangci-lint", "run", }
+        --             }
+        --         },
         gopls = {
           settings = {
             gopls = {
@@ -27,13 +32,13 @@ return {
                 parameterNames = false,
                 rangeVariableTypes = true,
               },
-              -- analyses = {
-              --   fieldalignment = true,
-              --   nilness = true,
-              --   unusedparams = true,
-              --   unusedwrite = true,
-              --   useany = true,
-              -- },
+              analyses = {
+                fieldalignment = false,
+                nilness = true,
+                unusedparams = true,
+                unusedwrite = true,
+                useany = true,
+              },
               usePlaceholders = false,
               -- completeUnimported = true,
               -- staticcheck = true,
